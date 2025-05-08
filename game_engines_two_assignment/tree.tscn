@@ -1,0 +1,359 @@
+[gd_scene load_steps=9 format=3 uid="uid://c2cvsdbyotowb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xer6i"]
+albedo_color = Color(0.53429, 0.33488, 0.275619, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_88vsh"]
+material = SubResource("StandardMaterial3D_xer6i")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xsj0f"]
+albedo_color = Color(0.533333, 0.333333, 0.27451, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_lh032"]
+material = SubResource("StandardMaterial3D_xsj0f")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2rdah"]
+albedo_color = Color(0.533333, 0.333333, 0.27451, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_suv6p"]
+material = SubResource("StandardMaterial3D_2rdah")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bkjwm"]
+albedo_color = Color(0.180732, 0.40609, 0.193257, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_aka78"]
+material = SubResource("StandardMaterial3D_bkjwm")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="trunk" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.944948, 0.731865, 0, -0.376671, 1.83602, 0, 0, 0, 1.01725, 0.00507051, 0.849499, 0)
+mesh = SubResource("CylinderMesh_88vsh")
+
+[node name="trunk2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.64, 1.53632, 0, -0.790701, 1.24351, 0, 0, 0, 1.01725, 1.96731, 3.48994, 0.0013448)
+mesh = SubResource("CylinderMesh_88vsh")
+
+[node name="trunk3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.95582, -0.67223, 0.0389037, 0.346189, 1.85853, 0.00119287, -0.0369873, 0.0235465, 1.01651, -0.916304, 1.74553, 0.0308483)
+mesh = SubResource("CylinderMesh_88vsh")
+
+[node name="branch" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.28674, -1.41158, 0, 0.453543, 0.892431, 0, 0, 0, 0.776514, -2.72608, 4.31083, 0)
+mesh = SubResource("CylinderMesh_lh032")
+
+[node name="branch2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.465214, -0.832209, 0, 0.267391, 1.4479, 0, 0, 0, 0.776514, 0.658966, 4.31083, 0)
+mesh = SubResource("CylinderMesh_lh032")
+
+[node name="branch3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.37363, 1.19864, 0, -0.385126, 1.16286, 0, 0, 0, 0.776514, -0.359637, 4.31083, 0)
+mesh = SubResource("CylinderMesh_lh032")
+
+[node name="branch4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.208297, -1.53906, 0, 0.494504, -0.648289, 0, 0, 0, 0.776514, 4.22989, 4.99808, 0.00796092)
+mesh = SubResource("CylinderMesh_lh032")
+
+[node name="twig" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.101353, -0.49581, 0, 0.126053, -0.398656, 0, 0, 0, 0.197661, -4.33746, 4.70383, 0)
+mesh = SubResource("CylinderMesh_suv6p")
+
+[node name="twig2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0339021, -0.622071, 0, 0.158153, 0.133349, 0, 0, 0, 0.197661, -0.455714, 5.1794, 0)
+mesh = SubResource("CylinderMesh_suv6p")
+
+[node name="twig3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.0971718, 0.508595, 0, -0.129303, -0.382211, 0, 0, 0, 0.197661, 5.14128, 4.70383, 0.0568023)
+mesh = SubResource("CylinderMesh_suv6p")
+
+[node name="twig4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.10674, 0.478, 0, -0.121525, -0.419845, 0, 0, 0, 0.197661, 4.40472, 5.65368, -0.0219738)
+mesh = SubResource("CylinderMesh_suv6p")
+
+[node name="twig5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.101353, -0.49581, 0, 0.126053, -0.398656, 0, 0, 0, 0.197661, 1.08856, 5.65075, 0)
+mesh = SubResource("CylinderMesh_suv6p")
+
+[node name="twig6" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.101353, -0.49581, 0, 0.126053, -0.398656, 0, 0, 0, 0.197661, -2.6581, 5.06483, 0)
+mesh = SubResource("CylinderMesh_suv6p")
+
+[node name="twig7" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.157552, -0.143937, 0, 0.0365939, -0.619706, 0, 0, 0, 0.197661, -3.88585, 5.70639, 0)
+mesh = SubResource("CylinderMesh_suv6p")
+
+[node name="twig8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.0584676, -0.593183, 0, 0.150809, -0.229973, 0, 0, 0, 0.197661, 1.22587, 4.70383, 0)
+mesh = SubResource("CylinderMesh_suv6p")
+
+[node name="twig9" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.00687192, -0.635628, 0, 0.1616, 0.0270298, 0, 0, 0, 0.197661, -4.56305, 5.21374, 0)
+mesh = SubResource("CylinderMesh_suv6p")
+
+[node name="twig10" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.00763617, -0.635493, 0, 0.161565, 0.0300359, 0, 0, 0, 0.197661, 6.25502, 5.62557, 0.122677)
+mesh = SubResource("CylinderMesh_suv6p")
+
+[node name="branch5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.110133, 0.197014, -0.754441, 0.415782, 1.04545, -0.0680865, 0.320808, -1.28732, -0.170755, 1.22466, 4.01357, -1.2599)
+mesh = SubResource("CylinderMesh_lh032")
+
+[node name="twig11" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.00763617, -0.635493, 0, 0.161565, 0.0300359, 0, 0, 0, 0.197661, 2.33685, 4.83772, -2.22774)
+mesh = SubResource("CylinderMesh_suv6p")
+
+[node name="Leaf" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 1.69967, 6.54229, 5.70531, 0.204053)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 2.00997, 5.31726, 6.09206, -1.29221)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 1.69967, 5.47353, 6.07689, 1.02961)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 2.00997, 4.97568, 6.43408, -0.138449)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 1.69967, 0.91882, 4.97055, -2.49902)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 2.00997, -4.5705, 5.66939, -1.29221)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf7" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 1.69967, -4.69218, 5.25632, 0.120555)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf8" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 2.00997, 0.0127745, 5.95035, -0.0913986)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf9" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 1.69967, -0.0692043, 5.71712, 1.4433)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf10" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 2.00997, -2.91631, 5.86184, 0.811693)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf11" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 1.69967, -2.49656, 5.18121, -1.14871)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf12" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 2.00997, 2.39207, 5.3636, -1.29221)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf13" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 1.69967, 1.31456, 5.03706, 1.4433)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf14" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 2.00997, 1.44076, 5.47139, 0.057735)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf15" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 1.69967, -2.7899, 5.52794, -0.15998)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf16" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 2.00997, 3.62461, 5.81718, -1.29221)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf17" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 1.69967, 2.48083, 5.82087, 0.526864)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf18" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 2.00997, -1.65485, 5.82087, 0.187864)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf19" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 1.69967, 1.38403, 6.19761, -1.63807)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf20" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 2.00997, -1.02618, 5.13796, -1.29221)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf21" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 1.69967, 0.651161, 6.21156, 0.725352)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf22" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 2.00997, -1.77079, 6.14845, -1.29221)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf23" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 1.69967, -2.11018, 6.25294, 1.4433)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf24" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 2.00997, 1.24495, 6.71505, -1.29221)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf25" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 1.69967, -1.57182, 6.99641, -1.37426)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf26" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 2.00997, -0.228677, 6.09609, -1.29221)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf27" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 1.69967, -0.234313, 6.64293, 0.137609)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf28" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 2.00997, -0.615317, 5.6491, -2.16545)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf29" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 1.69967, 5.12386, 4.52483, -0.362682)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf30" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 2.00997, -3.85495, 6.34116, 0.379506)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf31" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 1.69967, 3.16188, 5.10204, -2.27161)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf32" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.99604, 0, 0, 0, 0.111167, 0, 0, 0, 2.00997, 0.727514, 5.60587, -2.51023)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf33" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.00886955, 0, 0.111167, 0, 0.0104161, 0, -1.69965, -5.55113, 5.36067, 0.104229)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf34" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.0104888, 0, 0.111167, 0, 0.0104161, 0, -2.00994, -4.3183, 5.74742, 1.59408)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf35" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.00886955, 0, 0.111167, 0, 0.0104161, 0, -1.69965, -4.48668, 5.73224, -0.726894)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf36" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.0104888, 0, 0.111167, 0, 0.0104161, 0, -2.00994, -3.98275, 6.08943, 0.438551)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf37" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.00886955, 0, 0.111167, 0, 0.0104161, 0, -1.69965, 0.0863759, 4.6259, 2.77792)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf38" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.0104888, 0, 0.111167, 0, 0.0104161, 0, -2.00994, 5.56932, 5.32474, 1.54249)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf39" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.00886955, 0, 0.111167, 0, 0.0104161, 0, -1.69965, 5.68363, 4.91168, 0.1291)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf40" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.0104888, 0, 0.111167, 0, 0.0104161, 0, -2.00994, 0.979846, 5.60571, 0.365603)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf41" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.00886955, 0, 0.111167, 0, 0.0104161, 0, -1.69965, 1.05381, 5.37247, -1.1695)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf42" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.0104888, 0, 0.111167, 0, 0.0104161, 0, -2.00994, 3.90418, 5.51719, -0.552761)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf43" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.00886955, 0, 0.111167, 0, 0.0104161, 0, -1.69965, 3.49467, 4.83656, 1.40981)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf44" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.0104888, 0, 0.111167, 0, 0.0104161, 0, -2.00994, -1.39315, 5.01895, 1.57882)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf45" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.00886955, 0, 0.111167, 0, 0.0104161, 0, -1.69965, -0.329934, 4.69241, -1.16228)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf46" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.0104888, 0, 0.111167, 0, 0.0104161, 0, -2.00994, -0.448897, 5.12674, 0.223923)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf47" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.00886955, 0, 0.111167, 0, 0.0104161, 0, -1.69965, 3.78284, 5.18329, 0.419558)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf48" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.0104888, 0, 0.111167, 0, 0.0104161, 0, -2.00994, -2.62567, 5.47254, 1.58525)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf49" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.00886955, 0, 0.111167, 0, 0.0104161, 0, -1.69965, -1.4914, 5.47623, -0.239772)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf50" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.0104888, 0, 0.111167, 0, 0.0104161, 0, -2.00994, 2.64599, 5.47623, 0.077642)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf51" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.00886955, 0, 0.111167, 0, 0.0104161, 0, -1.69965, -0.383321, 5.85296, 1.91941)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf52" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.0104888, 0, 0.111167, 0, 0.0104161, 0, -2.00994, 2.02505, 4.79331, 1.56098)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf53" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.00886955, 0, 0.111167, 0, 0.0104161, 0, -1.69965, 0.337205, 5.86691, -0.447805)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf54" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.0104888, 0, 0.111167, 0, 0.0104161, 0, -2.00994, 2.76965, 5.8038, 1.5571)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf55" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.00886955, 0, 0.111167, 0, 0.0104161, 0, -1.69965, 3.09477, 5.9083, -1.18015)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf56" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.0104888, 0, 0.111167, 0, 0.0104161, 0, -2.00994, -0.246048, 6.3704, 1.57283)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf57" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.00886955, 0, 0.111167, 0, 0.0104161, 0, -1.69965, 2.57111, 6.65177, 1.64018)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf58" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.0104888, 0, 0.111167, 0, 0.0104161, 0, -2.00994, 1.22756, 5.75144, 1.56514)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf59" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.00886955, 0, 0.111167, 0, 0.0104161, 0, -1.69965, 1.22573, 6.29828, 0.135309)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf60" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.0104888, 0, 0.111167, 0, 0.0104161, 0, -2.00994, 1.61875, 5.30445, 2.43635)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf61" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.00886955, 0, 0.111167, 0, 0.0104161, 0, -1.69965, -4.12976, 4.18018, 0.663555)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf62" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.0104888, 0, 0.111167, 0, 0.0104161, 0, -2.00994, 4.84506, 5.99651, -0.125478)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf63" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.00886955, 0, 0.111167, 0, 0.0104161, 0, -1.69965, -2.15784, 4.75739, 2.56222)
+mesh = SubResource("CylinderMesh_aka78")
+
+[node name="Leaf64" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.99602, 0, -0.0104888, 0, 0.111167, 0, 0.0104161, 0, -2.00994, 0.277738, 5.26122, 2.78813)
+mesh = SubResource("CylinderMesh_aka78")

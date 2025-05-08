@@ -1,0 +1,87 @@
+[gd_scene load_steps=15 format=3 uid="uid://t2lauqtoa8vk"]
+
+[ext_resource type="Script" path="res://lion.gd" id="1_gdcxo"]
+[ext_resource type="Script" path="res://leg.gd" id="2_rfvb8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vq6sw"]
+albedo_color = Color(1, 0.752941, 0.0980392, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_pn642"]
+material = SubResource("StandardMaterial3D_vq6sw")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ejt1u"]
+albedo_color = Color(1, 0.752941, 0.0980392, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_waoof"]
+material = SubResource("StandardMaterial3D_ejt1u")
+
+[sub_resource type="BoxMesh" id="BoxMesh_y6d1m"]
+material = SubResource("StandardMaterial3D_ejt1u")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1aq6a"]
+albedo_color = Color(1, 0.411765, 0.145098, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_u08vt"]
+material = SubResource("StandardMaterial3D_1aq6a")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xwago"]
+albedo_color = Color(1, 0.411765, 0.145098, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_nvsme"]
+material = SubResource("StandardMaterial3D_xwago")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dyeaw"]
+albedo_color = Color(1, 0.752941, 0.0980392, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_sfrav"]
+material = SubResource("StandardMaterial3D_dyeaw")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wovq1"]
+
+[node name="Node3D" type="CharacterBody3D"]
+script = ExtResource("1_gdcxo")
+max_speed = 5.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.020925, 0.999781, 0, -0.999781, 0.020925, 0, 0, 0, 1, 0, 0.694851, 0)
+mesh = SubResource("CapsuleMesh_pn642")
+
+[node name="Leg" type="MeshInstance3D" parent="." groups=["lions"]]
+transform = Transform3D(0.118154, 0, 0, 0, 1, 0, 0, 0, 0.101338, 0.707597, 0.224791, 0.303528)
+mesh = SubResource("BoxMesh_waoof")
+script = ExtResource("2_rfvb8")
+
+[node name="Leg2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.118154, 0, 0, 0, 1, 0, 0, 0, 0.101338, 0.707597, 0.224791, -0.31656)
+mesh = SubResource("BoxMesh_waoof")
+script = ExtResource("2_rfvb8")
+
+[node name="Leg3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.118154, 0, 0, 0, 1, 0, 0, 0, 0.101338, -0.701112, 0.224791, 0.303528)
+mesh = SubResource("BoxMesh_waoof")
+script = ExtResource("2_rfvb8")
+
+[node name="Leg4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.118154, 0, 0, 0, 1, 0, 0, 0, 0.101338, -0.701112, 0.224791, -0.31656)
+mesh = SubResource("BoxMesh_waoof")
+script = ExtResource("2_rfvb8")
+
+[node name="tail" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0430846, 0.671781, 0, -0.0455479, 0.635449, 0, 0, 0, 0.0661928, 1.14038, 1.01711, -0.00941563)
+mesh = SubResource("BoxMesh_y6d1m")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="tail"]
+transform = Transform3D(1.52556, 0, 0, 0, 0.135347, 0, 0, 0, 1.82325, 0, 0.508671, 0)
+mesh = SubResource("CapsuleMesh_u08vt")
+
+[node name="head" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.04797, 1.21126, 0)
+mesh = SubResource("SphereMesh_nvsme")
+
+[node name="face" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.0348012, -0.167547, 0, 0.270878, -0.0215257, 0, 0, 0, 0.398597, -1.51473, 1.1004, 0.024677)
+mesh = SubResource("CapsuleMesh_sfrav")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.0097388, -1.99998, 0, 1.99998, 0.0097388, 0, 0, 0, 2, 0, 0.758461, 0)
+shape = SubResource("CapsuleShape3D_wovq1")

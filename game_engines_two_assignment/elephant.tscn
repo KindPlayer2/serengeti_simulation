@@ -1,0 +1,83 @@
+[gd_scene load_steps=14 format=3 uid="uid://bbap4uoitk66v"]
+
+[ext_resource type="Script" path="res://elephant.gd" id="1_iyh7e"]
+[ext_resource type="Script" path="res://leg.gd" id="2_y78qn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ucp64"]
+albedo_color = Color(0.446777, 0.446777, 0.446777, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_k2g1d"]
+material = SubResource("StandardMaterial3D_ucp64")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kf0oo"]
+albedo_color = Color(0.447059, 0.447059, 0.447059, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_626e3"]
+material = SubResource("StandardMaterial3D_kf0oo")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lm75e"]
+albedo_color = Color(0.447059, 0.447059, 0.447059, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_qcl4h"]
+material = SubResource("StandardMaterial3D_lm75e")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ubeq8"]
+albedo_color = Color(0.447059, 0.447059, 0.447059, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_nkix5"]
+material = SubResource("StandardMaterial3D_ubeq8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8li6x"]
+albedo_color = Color(0.447059, 0.447059, 0.447059, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_fnixv"]
+material = SubResource("StandardMaterial3D_8li6x")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_o7wnu"]
+
+[node name="Elephant" type="CharacterBody3D"]
+script = ExtResource("1_iyh7e")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0172786, 1.99993, 0, -1.99993, 0.0172786, 0, 0, 0, 2, 0, 1.94069, 0)
+mesh = SubResource("CapsuleMesh_k2g1d")
+
+[node name="Leg" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.485754, 0, 0, 0, 0.77882, 0, 0, 0, 0.47384, 1.13804, 0.758413, 0.54069)
+mesh = SubResource("CylinderMesh_626e3")
+script = ExtResource("2_y78qn")
+
+[node name="Leg2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.485754, 0, 0, 0, 0.77882, 0, 0, 0, 0.47384, 1.13804, 0.758413, -0.482234)
+mesh = SubResource("CylinderMesh_626e3")
+script = ExtResource("2_y78qn")
+
+[node name="Leg3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.485754, 0, 0, 0, 0.77882, 0, 0, 0, 0.47384, -1.1455, 0.758413, 0.54069)
+mesh = SubResource("CylinderMesh_626e3")
+script = ExtResource("2_y78qn")
+
+[node name="Leg4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.485754, 0, 0, 0, 0.77882, 0, 0, 0, 0.47384, -1.1455, 0.758413, -0.482234)
+mesh = SubResource("CylinderMesh_626e3")
+script = ExtResource("2_y78qn")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.34133, 0, 0, 0, 1.28516, 0, 0, 0, 1.22768, -2.16699, 2.68298, 0)
+mesh = SubResource("SphereMesh_qcl4h")
+
+[node name="ear" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.159537, 0.0769297, 0, 0.987192, -0.0124323, 0, 0, 0, 1, -1.9714, 3.04978, 0.90033)
+mesh = SubResource("CylinderMesh_nkix5")
+
+[node name="ear2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.159537, 0.0769297, 0, 0.987192, -0.0124323, 0, 0, 0, 1, -1.9714, 3.04978, -0.770652)
+mesh = SubResource("CylinderMesh_nkix5")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.313664, 0.311972, 0, -0.12634, 0.774532, 0, 0, 0, 0.296724, -2.83914, 1.98494, -0.0430185)
+mesh = SubResource("CylinderMesh_fnixv")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.0384835, -2.99975, 0, 2.99975, 0.0384835, 0, 0, 0, 3, 0, 1.38148, 0)
+shape = SubResource("CapsuleShape3D_o7wnu")
